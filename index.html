@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+          <div class="logo-container">
+            <img src="imagenes/logo.PNG" alt="Logo">
+          </div>
+          <nav class="nav-container">
+            <ul>
+              <li><a href="#">Nuevo</a></li>
+              <li><a href="#">Mujer</a></li>
+              <li><a href="#">Hombre</a></li>
+              <li><a href="#">Niños</a></li>
+              <li><a href="#">Marcas</a></li>
+              <li><a href="#">Ofertas</a></li>
+            </ul>
+          </nav>
+          <div class="search-container">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+          <div class="icon-container">
+            <a href="#"><img src="imagenes/usuario.png" alt="Logo" id="user-icon"></a>
+            <a href="#"><img src="imagenes/estrella.png" alt="Logo"></a>
+            <a href="#"><img src="imagenes/alfiler.png" alt="Logo"></a>
+            <a href="#"><img src="imagenes/carrito.png" alt="Logo"></a>
+          </div>
+        </div>
+        <div class="login-form-container" id="login-form-container">
+            <form class="login-form" id="login-form">
+              <input type="email" placeholder="Correo electrónico" required>
+              <input type="password" placeholder="Contraseña" required>
+              <button type="submit">Iniciar sesión</button>
+            </form>
+          </div>
+      </header>
+      <div id="image-slider">
+        <img src="imagenes/promo1.jpg" alt="Imagen 1">
+        <img src="imagenes/promo2.JPG" alt="Imagen 2">
+        <img src="imagenes/promo3.JPG" alt="Imagen 3">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>      
+
+      <div class="card-container">
+        <div class="card">
+          <img src="imagenes/zapato1.jpg" alt="Zapato 1">
+          <div class="card-info">
+            <h2>Zapato 1</h2>
+            <p>Descripción del zapato 1</p>
+            <p class="price">$100</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="imagenes/zapato2.jpg" alt="Zapato 2">
+          <div class="card-info">
+            <h2>Zapato 2</h2>
+            <p>Descripción del zapato 2</p>
+            <p class="price">$120</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="imagenes/zapato3.jpg" alt="Zapato 3">
+          <div class="card-info">
+            <h2>Zapato 3</h2>
+            <p>Descripción del zapato 3</p>
+            <p class="price">$85</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="imagenes/zapato4.jpg" alt="Zapato 4">
+          <div class="card-info">
+            <h2>Zapato 4</h2>
+            <p>Descripción del zapato 4</p>
+            <p class="price">$95</p>
+          </div>
+        </div>
+      </div>
+      
+      <script src="script.js"></script>
+      
+</body>
+</html>

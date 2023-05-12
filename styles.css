@@ -1,0 +1,267 @@
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 50px;
+    max-width: 1200px;
+    padding: 0 0;
+  }
+  
+  .logo-container img {
+    height: 50px;
+    width: auto;
+    padding-right: 120px;
+  }
+  
+  .nav-container{
+    margin-right: 150px;
+  }
+
+  .nav-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-container li {
+    margin-right: 20px;
+    padding: 14px;
+  }
+  
+  .nav-container a {
+    
+    color: #333333;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .search-container input[type="text"] {
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  .search-container button[type="submit"] {
+    background-color: #333333;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-container {
+    margin-left: 100px;
+    color: #333333;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .icon-container img{
+    height: 23px;
+    width: auto;
+    padding: 30px;
+  }
+  
+  /*LOGIN*/
+  .login-form-container {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 210px;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  #user-icon {
+    margin-right: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"]  {
+    border: none;
+    border-bottom: 2px solid #333;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  input[type="submit"] {
+    background-color: #333;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+/* IMAGENES */
+#image-slider {
+  position: relative;
+  width: 90%;
+  height: 540px;
+  overflow: hidden;
+  margin: 73px auto 0;
+}
+
+#image-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#image-slider img.active {
+  opacity: 1;
+}
+
+/* Botones para cambiar de imagen */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*ZAPATOS*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 50px;
+}
+
+.card {
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h2 {
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+  
+@media (max-width: 768px) {
+  .header-container {
+    margin: 0 10px;
+    padding: 0;
+  }
+  
+  .logo-container img {
+    padding-right: 0;
+  }
+  
+  .nav-container {
+    display: none;
+  }
+  
+  .search-container input[type="text"] {
+    width: 100%;
+  }
+  
+  .search-container button[type="submit"] {
+    margin-right: 0;
+  }
+  
+  .icon-container {
+    margin-left: 0;
+  }
+  
+  .login-form-container {
+    top: 100px;
+    right: 10px;
+    padding: 10px;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"]  {
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    margin: 10px 0;
+  }
+  #image-slider {
+    height: 300px;
+    margin-top: 30px;
+  }
+}
+
+
