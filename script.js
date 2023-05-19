@@ -43,3 +43,10 @@ var images = document.querySelectorAll("#image-slider img");
     slides[slideIndex-1].className = "active";
   }
   
+// JavaScript para mostrar/ocultar el menú móvil
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const navContainer = document.querySelector('.nav-container');
+
+mobileMenuButton.addEventListener('click', function() {
+  navContainer.classList.toggle('show-menu');
+});
