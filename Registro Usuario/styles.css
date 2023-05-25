@@ -1,0 +1,350 @@
+header {
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 50px;
+    max-width: 1200px;
+    padding: 0 0;
+  }
+  
+  .logo-container img {
+    height: 50px;
+    width: auto;
+    padding-right: 120px;
+  }
+  
+  .nav-container{
+    margin-right: 150px;
+  }
+
+  .nav-container ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-container li {
+    margin-right: 20px;
+    padding: 14px;
+  }
+  
+  .nav-container a {
+    
+    color: #333333;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+/*BUSCAR*/
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  width: 300px;
+}
+
+.search-container button[type="submit"] {
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.search-container img{
+  width: 23px;
+}
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-container {
+    margin-left: 100px;
+    color: #333333;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .icon-container img{
+    height: 23px;
+    width: auto;
+    padding: 25px;
+  }
+  
+  /*LOGIN*/
+  .login-form-container {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 210px;
+    background-color: #fce1e1;
+    padding: 20px;
+  }
+  #user-icon {
+    margin-right: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"]  {
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  input[type="submit"] {
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+/* IMAGENES */
+#image-slider {
+  position: relative;
+  width: 90%;
+  height: 540px;
+  overflow: hidden;
+  margin: 73px auto 0;
+}
+
+#image-slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#image-slider img.active {
+  opacity: 1;
+}
+
+/* Botones para cambiar de imagen */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*TITULO*/
+.section-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: bold;
+  position: relative;
+  padding: 20px;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 2px;
+  background-color: #000;
+}
+
+.section-title h2::before {
+  left: 0;
+  transform: translate(-100%, -50%);
+}
+
+.section-title h2::after {
+  right: 0;
+  transform: translate(100%, -50%);
+}
+
+
+/*ZAPATOS*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 50px;
+}
+
+.card {
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+  height: 430px;
+  padding: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h2 {
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*Registro*/
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.login-form img {
+  width: 350px;
+  margin-right: 20px;
+}
+
+.login-form form {
+  width: 300px;
+}
+
+.login-form label,
+.login-form input,
+.login-form button {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #F05853;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #45a049;
+}
+
+.login-form a {
+  color: #4CAF50;
+}
+  
+/* Estilos para pantallas de hasta 768px de ancho */
+@media screen and (max-width: 768px) {
+  .logo-container img {
+    padding-right: 30px;
+  }
+
+  .nav-container {
+    margin-right: 30px;
+  }
+
+  .search-container input[type="text"] {
+    width: 200px;
+  }
+
+  .icon-container {
+    margin-left: 50px;
+  }
+
+  .login-form-container{
+    right: 10px;
+  }
+
+  #image-slider{
+    height: 300px;
+  }
+  
+  #image-slider img{
+    height: 100%;
+  }
+  
+  .prev,
+  .next {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
